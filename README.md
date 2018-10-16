@@ -1,17 +1,17 @@
 # Dhcp-Tftp Server Kurulumu
 ## Statik IP Atamama
 /etc/network/interfaces
-´´´
+```
 auto enp0s3
 iface enp0s3 inet static
 	address 192.168.56.50
 	netmask 255.255.255.0
 	gateway 192.168.56.1
 	broadcast 192.168.56.255
-´´´
+```
 ## Dhcp konfigürsayon
 /etc/dhcp/dhcpd.conf
-´´´
+```
 ddns-update-style none;
 
 option domain-name "pardus.lab";
@@ -33,7 +33,7 @@ subnet 192.168.56.0 netmask 255.255.255.0 {
   filename "pxelinux.0";
   next-server 192.168.56.50;
 }
-´´´
+```
 ## Debian-installer
   Preseed dosyasını debian-installer menusune eklemek için menüye aşağıdaki satırları eklemek gerekir
 ```
