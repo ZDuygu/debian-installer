@@ -1,5 +1,8 @@
+# Detaylı Kurulum
+[include](Kurulum.odt)
+
 # Dhcp-Tftp Server Kurulumu
-## Statik IP Atamama
+## Statik IP Atama
 /etc/network/interfaces
 ```
 auto enp0s3
@@ -35,7 +38,7 @@ subnet 192.168.56.0 netmask 255.255.255.0 {
 }
 ```
 ## Debian-installer
-  Preseed dosyasını debian-installer menusune eklemek için menüye aşağıdaki satırları eklemek gerekir
+  Preseed dosyasını debian-installer menusune eklemek için /var/lib/tftpboot/debian-installer/amd64/boot-screens/adtxt.cdf dosyasının sonuna aşağıdaki satırlar eklenir.
 ```
 label preseed
         menu label ^Preseed install
