@@ -1,5 +1,5 @@
 # Detaylı Kurulum
-[include](Kurulum.odt)
+[Detaylı kurulum manueli](Kurulum.odt)
 
 # Dhcp-Tftp Server Kurulumu
 ## Statik IP Atama
